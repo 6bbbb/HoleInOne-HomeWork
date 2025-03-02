@@ -1,0 +1,41 @@
+/* Main */
+:root {
+    --green-1: #a8bfaa;
+    --green-2: #658c6f;
+    --green-3: #2b8c44;
+    --green-4: #1f7334;
+    --green-5: #115923;
+}
+
+/* buttons */
+.btn-primary {
+    color: white;
+    background: var(--green-3);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    /*Back Later change rem to 2rem*/
+    border-radius: 3px;
+    border: solid transparent 2px;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border: solid #2b8c44 2px;
+
+}
+
+.btn-border {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    /*Back Later change rem to 2rem*/
+    border-radius: 3px;
+    background-color: transparent;
+    border: solid #2b8c44 2px;
+    transition: 0.5s;
+}
+
+.btn-border:hover{
+    border: solid grey 2px;
+
+}
