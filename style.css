@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Barriecito&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Main */
 :root {
     --green-1: #a8bfaa;
@@ -5,25 +7,26 @@
     --green-3: #2b8c44;
     --green-4: #1f7334;
     --green-5: #115923;
+    --green-6: #002e0c;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 html {
     font-size: 62.5%;
 }
 
-body{
+body {
     height: 100vh;
-    overflow: hidden;
+    background: #222;
 }
+
 /* Utile */
-.logo  {
+.logo {
     width: 20%;
     border-radius: 3rem;
     margin: auto;
@@ -33,9 +36,10 @@ body{
 /* NavBar */
 nav {
     display: flex;
+    position: fixed;
     width: 100%;
-    background: var(--green-2);
-
+    background: var(--green-3);
+    z-index: 9;
 }
 
 #container {
@@ -74,33 +78,37 @@ nav {
     background: #a8bfaa49;
 }
 
-#container .btn{
+#container .btn {
     color: white;
     font-size: 2rem;
-    padding: 1rem;/*Back Later change rem to 2rem*/
+    padding: 1rem;
+    /*Back Later change rem to 2rem*/
     border-radius: 0.3rem;
     border-bottom: solid transparent 3px;
     transition: 0.5s;
 }
 
-#container .btn:hover{
-    border-color:  greenyellow ;
+#container .btn:hover {
+    border-color: greenyellow;
 
 
 
 }
 
+/* ---Home page--- */
 /* Showcase */
 #home-container {
     height: 100vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, .1)), url('https://images.pexels.com/photos/92858/pexels-photo-92858.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    color: white;
 }
 
-#home-container a{
+#home-container a {
     text-decoration: none;
+    color: white;
 }
 
-.left-side{
+.left-side {
     display: flex;
     height: 100%;
     width: 50%;
@@ -108,24 +116,329 @@ nav {
 
 }
 
-.left-side .content{
+.left-side .content {
     margin-top: 15rem;
     margin-left: 10rem;
-}  
+}
 
 
-
-.left-side .content h1{
+.left-side .content h1 {
     font-size: 6rem;
 }
 
-.left-side .content p{
+.left-side .content p {
     margin-top: 1rem;
     font-size: 1.5rem;
 }
 
-.buttons{
+.buttons {
     display: flex;
     margin: 2rem 0;
     gap: 1rem;
+}
+
+/* ---Featured Places page--- */
+
+#places-container #main-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/FeaturedPlaces/featured-places-main.jpg") no-repeat center center/cover;
+}
+
+#places-container #main-image h1 {
+    color: #d4d4d4;
+    font-size: 10rem;
+}
+
+#places-container #main-image i {
+    font-size: 8rem;
+    color: white;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    max-height: 400px;
+    font-family: "Amiri Quran", serif;
+}
+
+.info .img {
+    height: 100%;
+    width: 50%;
+}
+
+.info .img img {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info .artical {
+    background: var(--green-2);
+    width: 50%;
+}
+
+.info .artical h1 {
+    margin-top: -1rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.info .artical p {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 2rem;
+    font-weight: 500;
+}
+
+.left-right {
+    flex-direction: row;
+}
+
+.right-left {
+    flex-direction: row-reverse;
+}
+
+/* Icons */
+#icons {
+    display: flex;
+    width: 100%;
+}
+
+#icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    width: 33.33333%;
+    height: 25rem;
+}
+
+#icons .icon i {
+    font-size: 6rem;
+}
+
+#icons .icon h1 {
+    font-size: 4rem;
+}
+
+#icons .icon p {
+    font-size: 2rem;
+}
+
+
+/* ---Shop page--- */
+
+#shop-container {
+    background: linear-gradient(to top, #a8bfaa, #658c6f);
+}
+
+#offers {
+    z-index: -1;
+}
+
+#demo img {
+    height: 90vh;
+    width: 100vh;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--green-4);
+    max-width: 480px;
+    max-height: fit-content;
+    min-height: 500px;
+    margin: 3rem 4rem;
+    border-radius: 8px;
+}
+
+.product-card .img {
+    width: 100%;
+    height: 70%;
+}
+
+.product-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+.product-card h1 {
+    text-align: center;
+}
+
+.product-card p {
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.product-card .mybtn-primary {
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.product-card .mybtn-primary:hover {
+    color: #d4d4d4;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/* ---Other Events--- */
+#banner {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/Events/banner.jpg') no-repeat center center/cover;
+}
+
+#banner h1 {
+    color: white;
+    font-size: 10rem;
+}
+
+#banner #events {
+    margin-top: 6rem;
+}
+
+#banner #events ul {
+    display: flex;
+    list-style: none;
+}
+
+#banner #events ul li {
+    color: #f4f4f4;
+    font-size: 2rem;
+    margin: 0 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border-bottom: solid green 2px;
+}
+
+/* Lectures */
+.lectures {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    background: var(--green-4);
+}
+
+.lectures h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin:1rem 0;
+}
+.lectures .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.lectures .cards .card {
+    width: 480px;
+    height: 600px;
+    background: var(--green-5);
+    border-radius: 8px;
+}
+
+.lectures .cards .card .img {
+    width: 100%;
+    height: 60%;
+}
+
+.lectures .cards .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.lectures .cards .card h1 {
+    font-size: 3rem;
+}
+
+.lectures .cards .card p {
+    color: #f4f4f4;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.tags{
+    margin-top: 2rem;
+}
+
+.tags ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+
+.tags ul li {
+    list-style: none;
+    color: white;
+    font-size: 1.8rem;
+    border: solid #002e0c 4px;
+    padding: .7rem 4rem;
+    border-radius: 5rem;
+}
+
+.tags ul li:first-child{
+    background: var(--green-6);
+}
+.tags ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background: grey;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.5rem;
 }

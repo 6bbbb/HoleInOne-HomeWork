@@ -6,41 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- CSS -->
     <link rel="stylesheet" href="../utilities.css">
     <link rel="stylesheet" href="../style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>hole In One | Home</title>
+    <!-- Bootstrap 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hole In One | Home</title>
 </head>
 
 <body>
     <!-- head -->
-     <header>
+    <header>
         <!-- NavBar -->
-         <nav >
+        <nav>
             <div id="container">
                 <!-- logo -->
-                <a href=""><h1 class="logo">HIO</h1></a>
+                <a href="">
+                    <img class="logo" src="../img/logo2.gif" alt="">
+                </a>
                 <ul>
-                    <li><a href="../index.html" >Home</a></li>
-                    <li><a href="#">Featured Places</a></li>
-                    <li><a class="current" href="HTMLs/shop.html">Shop</a></li>
-                    <li><a href="#">Other Events</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Places</a></li>
+                    <li><a class="current" href="shop.html">Shop</a></li>
+                    <li><a href="other-events.html">Other Events</a></li>
                     <li><a href="#">Plans</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <!-- login + signup -->
-                <a href="#" class="btn">Login/Register</a>
+                <a href="#" class="btn">Login / Register</a>
             </div>
-         </nav>
-     </header>
-
-     <main>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
         <div id="shop-container">
 
+            <div id="offers">
+                <!-- Carousel -->
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/Shop/poster-1.png" alt="Offers" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Shop/poster-2.png" alt="Offers" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/Shop/poster-3.png" alt="Offers" class="d-block w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- End Offers -->
+            <!-- Products -->
+            <div class="products">
+                <div class="row">
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                        <!-- Card -->
+                        <div class="product-card">
+                            <div class="img"><img
+                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
+                                    alt="burger"></div>
+                            <h1>Big Burger</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam, sapiente?
+                            </p>
+                            <a class="mybtn-primary" href="">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-     </main>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copy Rights Reserved &copy; 2025</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>

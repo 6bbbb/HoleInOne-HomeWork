@@ -5,10 +5,18 @@
     --green-3: #2b8c44;
     --green-4: #1f7334;
     --green-5: #115923;
+    --green-6: #002e0c;
+}
+
+/* Text Colors */
+
+.text-primary{
+    color: var(--green-3);
 }
 
 /* buttons */
-.btn-primary {
+.mybtn-primary {
+    text-decoration: none;
     color: white;
     background: var(--green-3);
     font-size: 2rem;
@@ -19,7 +27,7 @@
     transition: 0.5s;
 }
 
-.btn-primary:hover {
+.mybtn-primary:hover {
     background: transparent;
     border: solid #2b8c44 2px;
 
@@ -38,4 +46,26 @@
 .btn-border:hover{
     border: solid grey 2px;
 
+}
+
+/* background colors */
+
+.bg-1{
+    background: var(--green-1);
+}
+
+.bg-2{
+    background-color: var(--green-2);
+}
+.bg-3{
+    background: var(--green-3);
+}
+.bg-4{
+    background: var(--green-4);
+}
+.bg-5{
+    background: var(--green-5);
+}
+.bg-6{
+    background: var(--green-6);
 }
