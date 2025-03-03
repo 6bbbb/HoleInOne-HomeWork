@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../utilities.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="../mobile.css">
+    <title>Packages & Plans</title>
+</head>
+
+<body>
+    <!-- head -->
+    <header>
+        <!-- NavBar -->
+        <nav>
+            <div id="container">
+                <!-- logo -->
+                <a href="../index.html">
+                    <img class="logo" src="../img/logo2.gif" alt="">
+                </a>
+                <div onclick=chowSidebar()>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="side-bar" id="side-bar">
+                    <li ><a href="../index.html" >Home</a></li>
+                    <li ><a href="featured.html">Featured Places</a></li>
+                    <li ><a href="shop.html">Shop</a></li>
+                    <li ><a href="other-events.html">Other Events</a></li>
+                    <li ><a class="current" href="plans.html">Plans</a></li>
+                    <li ><a href="about.html">About</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                    <li ><a href="login.html" class="show">Login / Register</a></li>
+                </ul>
+                <ul class="desk">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Places</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="other-events.html">Other Events</a></li>
+                    <li><a class="current" href="plans.html">Plans</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!-- login + signup -->
+                <a href="login.html" class="btn">Login / Register</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main onclick=hideSidebar()>
+        <div id="plans-container">
+            <!-- title -->
+            <div class="title">
+                <div class="left">
+                    <h1>Packages offered are tailored for you.</h1>
+                </div>
+                <div class="right">
+                    <img src="../img/PLans/FiveStarsReviews.png" alt="Five Stars Reviews">
+                </div>
+            </div>
+
+            <!-- plans -->
+            <div class="plans">
+                <!-- Card -->
+
+
+                <!-- Card 1: Featured Packages -->
+                <div class="card">
+                    <div class="top">
+                        <h1>Featured Packages</h1>
+                        <h1 id="price">$499<span class="text-primary"></span></h1>
+                        <h2>Popular Choices for Your Stay</h2>
+                        <div class="button">
+                            <a class="mybtn-primary mybtn-black" href="">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="down">
+                        <h2>Features</h2>
+                        <h3>Everything in Featured Packages</h3>
+                        <ul>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Two-night stay in a double room with breakfast</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Three rounds - 18 holes, including one round at "Sea View" (if available)</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Free cart rental</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>20% discount at the pro shop</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2: Custom Packages -->
+                <div class="card mid">
+                    <div class="top">
+                        <h1>Custom Packages</h1>
+                        <h1 id="price">$999<span class="text-primary"></span></h1>
+                        <h2>Tailored Experiences Just for You</h2>
+                        <div class="button">
+                            <a class="mybtn-primary mybtn-black" href="">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="down">
+                        <h2>Features</h2>
+                        <h3>Everything in Custom Packages</h3>
+                        <ul>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Five-night stay in a luxurious suite</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Five rounds - 18 holes</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>One guaranteed round at the famous "Sea View" course</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Free digital training session</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Triple tee option</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3: Five Rounds Package -->
+                <div class="card">
+                    <div class="top">
+                        <h1>Five Rounds Package</h1>
+                        <h1 id="price">$299<span class="text-primary"></span></h1>
+                        <h2>Perfect for Golf Enthusiasts</h2>
+                        <div class="button">
+                            <a class="mybtn-primary mybtn-black" href="">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="down">
+                        <h2>Features</h2>
+                        <h3>Everything in Five Rounds Package</h3>
+                        <ul>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>One-night stay with full breakfast</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Dinner at any of the resort's restaurants</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Access to all resort courses (fees apply, excluding "Sea View")</h4>
+                            </li>
+                            <li class="row"> <img src="../img/PLans/Check.png" alt="Check Icon">
+                                <h4>Free club rental</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>Copy Rights Reserved &copy; 2025</p>
+    </footer>
+    <!-- JavaScript -->
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+nav {
+    position: fixed;
+    width: 100dvw;
+}
+
+nav .desk li a,
+nav #container .btn {
+    display: none;
+}
+
+
+
+.side-bar {
+    background: #006c126a;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.side-bar li {
+    display: none;
+    width: 50dvw;
+
+}
+
+.side-bar li:first-child {
+    margin-top: 2rem;
+}
+
+.fa-bars {
+    display: block;
+}
+
+/* ---Home page--- */
+/* Showcase */
+#home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-side,
+.right-side {
+    width: 100%;
+}
+
+.left-side .content {
+    margin: 10rem 1rem;
+}
+
+/* ---Featured Places page--- */
+#places-container #main-image h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+#places-container #main-image i {
+    font-size: 10rem;
+}
+
+.info {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.info .img {
+    display: block;
+    width: 100%;
+    height: 50ch;
+    background: yellow;
+    display: none;
+
+}
+
+.info .img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info .artical {
+    width: 100%;
+
+}
+
+#icons {
+    flex-direction: column;
+}
+
+#icons .icon {
+    width: 100%;
+    display: block;
+}
+
+/* ---Other Events--- */
+#banner h1 {
+    text-align: center;
+}
+
+#banner #events ul {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.lectures {
+    height: fit-content;
+}
+
+.lectures .cards {
+    flex-direction: column;
+}
+
+
+.lectures .cards .card {
+    width: 90dvw;
+    height: fit-content;
+    gap: 0rem;
+    margin-bottom: 2rem;
+}
+
+/* ---Shop Page--- */
+.carousel {
+    padding-top: 2rem;
+}
+/* ---Plans Page--- */
+#plans-container {
+    height: fit-content;
+}
+
+#plans-container .title {
+    flex-direction: column;
+    padding: 0;
+    padding-top: 10rem;
+    align-items: center;
+    justify-self: center;
+}
+
+#plans-container .title .left h1 {
+    max-width: 100dvw;
+    height: fit-content;
+    font-size: rem;
+    text-align: center;
+}
+
+#plans-container .title .right img {
+    width: 100%;
+}
+
+#plans-container .plans {
+    flex-direction: column;
+    gap: 0rem;
+
+}
+
+
+#plans-container .plans .card {
+    width: 350px;
+    height: fit-content;
+    margin-bottom: 2rem;
+}
+
+/* ---About Page--- */
+#about-container {
+    flex-direction: column;
+    height: fit-content;
+}
+
+#about-container .left-side {
+    width: 100%;
+}
+
+#about-container .right-side {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+#about-container .right-side h1 {
+    font-size: 6rem;
+}
+
+/* Testimonials */
+.testimonials h1 {
+    font-size: 6rem;
+}
+
+.testimonials-container .card .row i {
+    font-size: 3rem;
+    position: relative;
+    left: 10%;
+}
+
+/* --Contact Page-- */
+
+.contianer {
+    flex-direction: column;
+    width: 95%;
+    height: fit-content;
+    background: linear-gradient(to top, hsla(0, 0%, 0%, 5), hsla(0, 0%, 0%, 0.3)),
+        url('img/contact/player1.jpg') no-repeat center center/cover;
+}
+
+.contianer .left {
+    width: 100%;
+}
+
+.contianer .right {
+    display: none;
+}
+
+.contianer .left .content h1 {
+    color: #fff;
+}
+
+.contianer .left .content .contact-button {
+    margin-top: 2rem;
+}
+
+.contianer .left .content .contact-button .mybtn-primary {
+    background: green;
+}
+
+.contianer .left .content .contact-button .mybtn-primary:hover {
+    background: rgba(0, 128, 0, 0.1);
+}
+
+/* ---Login Page--- */
+.login-page,
+.register-page {
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.login-page .container {
+    width: 80dvw;
+    height: 740px;
+}
+
+.login-page .container h1 {
+    margin-bottom: 0rem;
+    color: #333;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login-page .container .mybtn-primary {
+    margin: 0rem;
+    text-align: center;
+}
+
+.login-page .container .row a {
+    color: aqua;
+}
+
+.login-page .container .row .row {
+    color: #00aaff;
+    text-shadow: 0 0 5px blue;
+}
+
+

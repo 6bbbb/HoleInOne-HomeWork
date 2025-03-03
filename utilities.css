@@ -8,6 +8,13 @@
     --green-6: #002e0c;
 }
 
+/* Util */
+.line{
+    margin-top: 1rem;
+    width: 100%;
+    height: 1px;
+    background: #333;
+}
 /* Text Colors */
 
 .text-primary{
@@ -16,6 +23,7 @@
 
 /* buttons */
 .mybtn-primary {
+    display: inline-block;
     text-decoration: none;
     color: white;
     background: var(--green-3);
@@ -48,6 +56,9 @@
 
 }
 
+.mybtn-black{
+    background: #000;
+}
 /* background colors */
 
 .bg-1{
@@ -68,4 +79,9 @@
 }
 .bg-6{
     background: var(--green-6);
+}
+
+/* Color */
+.bg-darkgrey{
+    background: #333;
 }

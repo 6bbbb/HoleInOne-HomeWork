@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="../utilities.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="../mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <title>Hole In One | Home</title>
+    <title>Featured Places</title>
 </head>
 
 <body>
@@ -20,29 +24,42 @@
         <nav>
             <div id="container">
                 <!-- logo -->
-                <a href="">
+                <a href="../index.html">
                     <img class="logo" src="../img/logo2.gif" alt="">
                 </a>
-                <ul>
+                <div onclick=chowSidebar()>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="side-bar" id="side-bar">
+                    <li ><a href="../index.html" >Home</a></li>
+                    <li ><a href="featured.html">Featured Places</a></li>
+                    <li ><a href="shop.html">Shop</a></li>
+                    <li ><a href="other-events.html">Other Events</a></li>
+                    <li ><a href="plans.html">Plans</a></li>
+                    <li ><a href="about.html">About</a></li>
+                    <li ><a href="contact.html">Contact</a></li>
+                    <li ><a href="login.html" class="show">Login / Register</a></li>
+                </ul>
+                <ul class="desk">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a class="current" href="features-places.html">Featured Places</a></li>
+                    <li><a class="current" href="featured.html">Featured Places</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="other-events.html">Other Events</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <!-- login + signup -->
-                <a href="#" class="btn">Login / Register</a>
+                <a href="login.html" class="btn">Login / Register</a>
             </div>
         </nav>
     </header>
     <!-- Main -->
-    <main>
+    <main onclick=hideSidebar()>
         <div id="places-container">
             <!-- main image -->
             <div id="main-image">
-                <h1>Our Awesome <span class="text-primary">Places</span></h1>
+                <h1 >Our Awesome <span class="text-primary">Places</span></h1>
                 <i class="ri-golf-ball-fill"></i>
             </div>
             <!-- Articals -->
@@ -123,7 +140,7 @@
                         the world’s most famous golf course designers, it offers an unforgettable playing experience
                         thanks to its natural obstacles and unique
                         lighting at night.
-
+<!-- 
                         Alongside the Sea View Course, we offer the
                         Eagle View Course, an 18-hole course with
                         panoramic
@@ -137,11 +154,11 @@
                         The third course is the Green Oasis Course, a small 9-hole course, ideal for beginners or for
                         quick play. It features stunning landscapes and comfortable rest areas, in addition to a
                         training area equipped with the latest technology. It also features night lighting that allows
-                        play even after sunset, and has a shop that sells golf equipment at competitive prices.
+                        play even after sunset, and has a shop that sells golf equipment at competitive prices. -->
                     </p>
                 </div>
             </div>
-
+            
             <!-- ---Icons--- -->
             <div id="icons">
                 <!-- Icon 1 -->
@@ -186,7 +203,7 @@
         <p>Copy Rights Reserved &copy; 2025</p>
     </footer>
     <!-- JavaScript -->
-
+    <script src="../script.js"></script>
 </body>
 
 </html>

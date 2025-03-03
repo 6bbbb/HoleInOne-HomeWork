@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    
+
     <title>Hole In One | Home</title>
 </head>
 
@@ -22,49 +26,66 @@
             <div id="container">
                 <!-- logo -->
                 <a href="">
-                    <img  class="logo" src="img/logo2.gif" alt="">
+                    <img class="logo" src="img/logo2.gif" alt="">
                 </a>
-                <ul>
+                <div onclick=chowSidebar()>
+                    
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="side-bar">
+                    <li class="hid"><a href="index.html" class="current">Home</a></li>
+                    <li class="hid"><a href="HTMLs/featured.html">Featured Places</a></li>
+                    <li class="hid"><a href="HTMLs/shop.html">Shop</a></li>
+                    <li class="hid"><a href="HTMLs/other-events.html">Other Events</a></li>
+                    <li class="hid"><a href="HTMLs/plans.html">Plans</a></li>
+                    <li class="hid"><a href="HTMLs/about.html">About</a></li>
+                    <li class="hid"><a href="HTMLs/contact.html">Contact</a></li>
+                    <li class="hid"><a href="HTMLs/login.html" class="show">Login / Register</a></li>
+                </ul>
+                <ul class="desk">
                     <li><a href="index.html" class="current">Home</a></li>
                     <li><a href="HTMLs/featured.html">Featured Places</a></li>
                     <li><a href="HTMLs/shop.html">Shop</a></li>
                     <li><a href="HTMLs/other-events.html">Other Events</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="HTMLs/plans.html">Plans</a></li>
+                    <li><a href="HTMLs/about.html">About</a></li>
+                    <li><a href="HTMLs/contact.html">Contact</a></li>
                 </ul>
                 <!-- login + signup -->
-                <a href="#" class="btn">Login / Register</a>
+                <a href="HTMLs/login.html" class="btn">Login / Register</a>
             </div>
+
         </nav>
     </header>
     <!-- Main -->
-    <main>
-        <div id="home-container">
+    <main onclick=hideSidebar()>
+        <div  id="home-container">
             <div class="left-side">
                 <div class="content">
                     <!-- title -->
-                <h1 >
-                    <span class="typed"></span>
-                </h1>
-                <!-- description -->
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quibusdam aliquam totam nostrum recusandae
-                    a et magni tempora laborum dolore velit.</p>
-                <!-- buttons -->
-                <div class="buttons">
-                    <a class="mybtn-primary" href="HTMLs/about.html">About Us</a>
-                    <a class="btn-border" href="HTMLs/contact.html">Contact</a>
-                </div>
+                    <h1>
+                        <span class="typed"></span>
+                    </h1>
+                    <!-- description -->
+                    <p>
+                        Discover the ultimate golfing experience with Hole in One! Whether you're a seasoned pro or a
+                        beginner,
+                        our world-class courses, luxurious accommodations, and exclusive packages are designed to make
+                        your stay unforgettable.
+                        Book your tee time now and elevate your game!</p>
+                    <!-- buttons -->
+                    <div class="buttons">
+                        <a class="mybtn-primary" href="HTMLs/about.html">About Us</a>
+                        <a class="btn-border" href="HTMLs/contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-     <!-- Footer -->
-     <footer>
+    <!-- Footer -->
+    <footer>
         <p>Copy Rights Reserved &copy; 2025</p>
-     </footer>
+    </footer>
     <!-- JavaScript -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>

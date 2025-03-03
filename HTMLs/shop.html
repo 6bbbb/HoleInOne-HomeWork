@@ -7,14 +7,17 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="../utilities.css">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="../mobile.css">
     <!-- Bootstrap 5 -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Hole In One | Home</title>
+
+    <title>Shop</title>
 </head>
 
 <body>
@@ -24,176 +27,148 @@
         <nav>
             <div id="container">
                 <!-- logo -->
-                <a href="">
+                <a href="../index.html">
                     <img class="logo" src="../img/logo2.gif" alt="">
                 </a>
-                <ul>
+                <div onclick=chowSidebar()>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="side-bar" id="side-bar">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="featured.html">Featured Places</a></li>
                     <li><a class="current" href="shop.html">Shop</a></li>
                     <li><a href="other-events.html">Other Events</a></li>
-                    <li><a href="#">Plans</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html" class="show">Login / Register</a></li>
+                </ul>
+                <ul class="desk">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Places</a></li>
+                    <li><a class="current" href="shop.html">Shop</a></li>
+                    <li><a href="other-events.html">Other Events</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <!-- login + signup -->
-                <a href="#" class="btn">Login / Register</a>
+                <a href="login.html" class="btn">Login / Register</a>
             </div>
         </nav>
     </header>
     <!-- Main -->
-    <main>
+    <main onclick=hideSidebar()>
         <div id="shop-container">
 
             <div id="offers">
                 <!-- Carousel -->
-                <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    </div>
-
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/Shop/poster-1.png" alt="Offers" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/Shop/poster-2.png" alt="Offers" class="d-block w-100">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../img/Shop/poster-3.png" alt="Offers" class="d-block w-100">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls/icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                <div class="carousel">
+                    <img src="../img/Shop/poster-1.png" alt="">
                 </div>
+
             </div>
             <!-- End Offers -->
             <!-- Products -->
             <div class="products">
                 <div class="row">
+                    <!-- Col 1-->
                     <div class="col">
-                        <!-- Card -->
+                        <!-- Card 1-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/pizza.jpg" alt="pizza"></div>
+                            <h1>Big Pizza</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Enjoy our delicious Big Pizza, loaded with fresh toppings and melted cheese. Perfect for
+                                sharing or indulging on your own!
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $12.99</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 2-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/coffe-1.jpg" alt="coffee"></div>
+                            <h1>Regular Coffee</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Start your day with our rich and aromatic Regular Coffee. Made from freshly ground beans
+                                for a smooth and satisfying taste.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $3.50</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 3-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/IronGolfPutter.jpg" alt="golf putter"></div>
+                            <h1>Iron Golf Putter</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Improve your game with our high-quality Iron Golf Putter. Designed for precision and
+                                control on the green.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $89.99</a>
                         </div>
                     </div>
+                    <!-- Col 2-->
                     <div class="col">
-                        <!-- Card -->
+                        <!-- Card 1-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
+                            <div class="img"><img src="../img/Shop/burger.jpg" alt="burger"></div>
                             <h1>Big Burger</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Sink your teeth into our juicy Big Burger, made with 100% beef, fresh veggies, and a
+                                soft bun. A classic favorite!
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $8.99</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 2-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/tea-1.jpg" alt="tea"></div>
+                            <h1>Regular Tea</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Relax with a cup of our soothing Regular Tea. A blend of premium tea leaves for a
+                                refreshing and calming experience.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $2.99</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 3-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/GolfBall.jpg" alt="golf ball"></div>
+                            <h1>Golf Ball</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Play like a pro with our durable and high-performance Golf Balls. Designed for maximum
+                                distance and accuracy.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $24.99</a>
                         </div>
                     </div>
+                    <!-- Col 3-->
                     <div class="col">
-                        <!-- Card -->
+                        <!-- Card 1-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/breakfast.jpg" alt="breakfast"></div>
+                            <h1>Full Breakfast & Dinner</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Treat yourself to a hearty Full Breakfast & Dinner. A complete meal with a variety of
+                                options to satisfy your cravings.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $15.99</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 2-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/iceCoffe-1.jpg" alt="ice coffee"></div>
+                            <h1>Ice Coffee</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Cool down with our refreshing Ice Coffee. A perfect blend of coffee, milk, and ice for a
+                                delightful pick-me-up.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $4.99</a>
                         </div>
-                        <!-- Card -->
+                        <!-- Card 3-->
                         <div class="product-card">
-                            <div class="img"><img
-                                    src="https://i.pinimg.com/736x/39/e9/7f/39e97f890fb372074fa0e06e202ef665.jpg"
-                                    alt="burger"></div>
-                            <h1>Big Burger</h1>
+                            <div class="img"><img src="../img/Shop/GolfBag.jpg" alt="golf bag"></div>
+                            <h1>Golf Bag</h1>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Nam, sapiente?
+                                Carry your gear in style with our spacious and durable Golf Bag. Perfect for keeping all
+                                your golf essentials organized.
                             </p>
-                            <a class="mybtn-primary" href="">Order Now</a>
+                            <a class="mybtn-primary" href="">Order Now - $129.99</a>
                         </div>
                     </div>
                 </div>
