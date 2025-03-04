@@ -172,8 +172,8 @@ nav {
 .info {
     display: flex;
     width: 100%;
-    height: 400px;
-    max-height: 400px;
+    height: 500px;
+    max-height: fit-content;
     font-family: "Amiri Quran", serif;
 }
 
@@ -201,10 +201,12 @@ nav {
 }
 
 .info .artical p {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.4rem;
+    line-height: 4rem;
     padding: 2rem;
     font-weight: 500;
+    color: rgb(1, 34, 15);
+
 }
 
 .left-right {
@@ -234,6 +236,10 @@ nav {
 
 #icons .icon i {
     font-size: 6rem;
+    color: white;
+    background: hsla(84, 100%, 59%, 0.3 );
+    padding: 1rem;
+    border-radius: 5rem;
 }
 
 #icons .icon h1 {
@@ -299,12 +305,16 @@ nav {
 }
 
 .product-card h1 {
+    font-size: 3rem;
     text-align: center;
+    color: whitesmoke;
 }
 
 .product-card p {
     font-size: 1.5rem;
     padding: 2rem;
+    color: #d4d4d4;
+
 }
 
 .product-card .mybtn-primary {
@@ -391,7 +401,6 @@ nav {
 
 .lectures .cards {
     margin-bottom: 2rem;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -404,6 +413,11 @@ nav {
     height: 600px;
     background: var(--green-5);
     border-radius: 8px;
+    transition: .5s;
+}
+
+.lectures .cards .card:hover{
+    transform: scale(1.1);
 }
 
 .lectures .cards .card .img {
@@ -740,9 +754,7 @@ nav {
     border-style: solid; */
 }
 
-.contianer:hover {
-    transform: scale(1.05);
-}
+
 
 .contianer .left {
     width: 50%;
@@ -811,7 +823,6 @@ nav {
 .contianer .right:hover {
     filter: blur(0px) brightness(1.1);
 
-
 }
 
 
@@ -866,7 +877,7 @@ nav {
 }
 
 .login-page .container input::placeholder {
-    color: rgb(1, 110, 1);
+    color: #f4f4f4;
 }
 
 
@@ -950,3 +961,8 @@ footer {
 footer p {
     font-size: 1.5rem;
 }
+
+
+
+
+/* The Rest */
