@@ -156,7 +156,7 @@ nav {
     align-items: center;
     height: 800px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/FeaturedPlaces/featured-places-main.jpg") no-repeat center center/cover;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/13655868/pexels-photo-13655868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
 }
 
 #places-container #main-image h1 {
